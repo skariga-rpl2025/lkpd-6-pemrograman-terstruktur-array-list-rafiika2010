@@ -6,7 +6,7 @@ package Tugas;
 
 /**
  *
- * @author Mutia
+ * @author Lab Studio
  */
 public class MainDataMahasiswa {
     
@@ -22,7 +22,7 @@ public class MainDataMahasiswa {
         System.out.println("Jumlah Mahasiswa: " + dataM.jumlahMahasiswa());
         dataM.tambahMahasiswa("126", "Boby", "Tlogomas");
         
-        String cari = "136";
+        String cari = "126";
         System.out.println("Cari Mahasiswa dengan Npm: " + cari);
         Mahasiswa mahas = dataM.cariMahasiswa(cari);
         if(mahas == null){
@@ -33,7 +33,7 @@ public class MainDataMahasiswa {
                     ", Nama: " + mahas.getNama() + ", Alamat: " + mahas.getAlamat());
         }
         
-        dataM.gantiMahasiswa(0, "124", "Windah", "Bali");
+        dataM.gantiMahasiswa(0, "126", "b", "Sidoarjo");
         mahas = dataM.lihatMahasiswa(0);
         System.out.println("Mahasiswa diganti dengan Npm: " + mahas.getNpm() +
                 ", Nama: " + mahas.getNama() + ", Alamat: " + mahas.getAlamat());
